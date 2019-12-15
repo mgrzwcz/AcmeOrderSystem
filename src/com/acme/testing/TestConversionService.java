@@ -20,8 +20,8 @@ public class TestConversionService {
 		ConversionService.fluidOunces(1.1f);
 		ConversionService.grams(30);
 		ConversionService.milliliters(4);
-		short grams = (short)ConversionService.grams(30);
-		int byteGrams = (byte)ConversionService.grams(30);
+		// short grams = (short)ConversionService.grams(30);
+		// int byteGrams = (byte)ConversionService.grams(30);
 		
 
 		// why do these still work even though the types are different
