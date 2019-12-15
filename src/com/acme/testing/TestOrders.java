@@ -11,6 +11,7 @@ public class TestOrders {
 			 MyDate date2 = new MyDate(4,10,2008);
 			 Order balloons = new Order(date2, 1000.00, "Bugs Bunny","Balloon",
 			 125);
+			 balloons.setQuantity(-200);
 
 			 System.out.println(anvil);
 			 System.out.println(balloons);

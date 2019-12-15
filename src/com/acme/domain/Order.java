@@ -2,11 +2,58 @@ package com.acme.domain;
 import com.acme.utils.MyDate;
 
 public class Order {
-	MyDate orderDate;
-	double orderAmount = 0.00;
-	String customer;
-	String product;
-	int quantity;
+	private MyDate orderDate;
+	private double orderAmount = 0.00;
+	private String customer;
+	private String product;
+	private int quantity;
+	
+	public MyDate getOrderDate() {
+		return orderDate;
+	}
+
+	public void setOrderDate(MyDate orderDate) {
+		this.orderDate = orderDate;
+	}
+
+	public double getOrderAmount() {
+		return orderAmount;
+	}
+
+	public void setOrderAmount(double orderAmount) {
+		if (orderAmount > 0) {
+		this.orderAmount = orderAmount;
+		} else {
+			System.out.println("Orders with the amount of zero or less cannot be processed.");
+		}
+	}
+
+	public String getCustomer() {
+		return customer;
+	}
+
+	public void setCustomer(String customer) {
+		this.customer = customer;
+	}
+
+	public String getProduct() {
+		return product;
+	}
+
+	public void setProduct(String product) {
+		this.product = product;
+	}
+
+	public int getQuantity() {
+		return quantity;
+	}
+
+	public void setQuantity(int quantity) {
+		if(quantity > 0) {
+		this.quantity = quantity;
+		}else{
+			System.out.println("Orders with the quantity of zero or less cannot be processed.");
+		}}
 	
 	public static double taxRate = 0.05;
 	
@@ -75,6 +122,8 @@ public class Order {
 		return total;
 		
 	}
+
+
 	
 	
 	
